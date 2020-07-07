@@ -34,9 +34,9 @@ class Modal extends React.Component {
     } = this.props;
 
     if (start.isSame(end, 'day')) {
-      return (<span>{`${start.format('Do MMM., HH:mm')} - ${end.format('HH:mm')}`}</span>);
+      return (<span>{`${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>);
     }
-    return (<span>{`${start.format('Do MMM.')} - ${end.format('Do MMM.')}, ${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>);
+    return (<span>{`${start.format('MMM.')} - ${end.format('MMM.')}, ${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>);
   }
 
   render() {
@@ -50,7 +50,7 @@ class Modal extends React.Component {
           ref={(el) => { this.input = el; }}
           className="customModal__input"
           type="text"
-          placeholder="Enter something"
+          placeholder="Note"
           defaultValue={value}
         />
         <button className="customModal__button" onClick={this.handleRemove}>Delete</button>
