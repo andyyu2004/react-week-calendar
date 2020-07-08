@@ -72,13 +72,13 @@ var Modal = function (_React$Component) {
         return _react2.default.createElement(
           'span',
           null,
-          start.format('Do MMM., HH:mm') + ' - ' + end.format('HH:mm')
+          start.format('HH:mm') + ' - ' + end.format('HH:mm')
         );
       }
       return _react2.default.createElement(
         'span',
         null,
-        start.format('Do MMM.') + ' - ' + end.format('Do MMM.') + ', ' + start.format('HH:mm') + ' - ' + end.format('HH:mm')
+        start.format('MMM.') + ' - ' + end.format('MMM.') + ', ' + start.format('HH:mm') + ' - ' + end.format('HH:mm')
       );
     }
   }, {
@@ -102,17 +102,17 @@ var Modal = function (_React$Component) {
           },
           className: 'customModal__input',
           type: 'text',
-          placeholder: 'Enter something',
+          placeholder: 'Note',
           defaultValue: value
         }),
         _react2.default.createElement(
           'button',
-          { className: 'customModal__button', onClick: this.handleRemove },
+          { className: 'customModal__button', style: { backgroundColor: 'red' }, onClick: this.handleRemove },
           'Delete'
         ),
         _react2.default.createElement(
           'button',
-          { className: 'customModal__button customModal__button_float_right', onClick: this.handleSave },
+          { className: 'customModal__button customModal__button_float_right', style: { backgroundColor: '#33cc33' }, onClick: this.handleSave },
           'Save'
         )
       );
