@@ -53,8 +53,8 @@ class Modal extends React.Component {
           placeholder="Note"
           defaultValue={value}
         />
-        <button className="customModal__button" onClick={this.handleRemove}>Delete</button>
-        <button className="customModal__button customModal__button_float_right" onClick={this.handleSave}>Save</button>
+	<button className="customModal__button" style={{ backgroundColor: 'red' }} onClick={this.handleRemove}>Delete</button>
+        <button className="customModal__button customModal__button_float_right" style={{ backgroundColor: '#33cc33' }} onClick={this.handleSave}>Save</button>
       </div>
     );
   }
