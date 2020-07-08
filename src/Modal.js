@@ -33,10 +33,7 @@ class Modal extends React.Component {
       end,
     } = this.props;
 
-    if (start.isSame(end, 'day')) {
-      return (<span>{`${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>);
-    }
-    return (<span>{`${start.format('MMM.')} - ${end.format('MMM.')}, ${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>);
+    return (<span>{`${start.format('HH:mm')} - ${end.format('HH:mm')}`}</span>);
   }
 
   render() {

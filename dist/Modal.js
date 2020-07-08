@@ -68,17 +68,10 @@ var Modal = function (_React$Component) {
           end = _props.end;
 
 
-      if (start.isSame(end, 'day')) {
-        return _react2.default.createElement(
-          'span',
-          null,
-          start.format('HH:mm') + ' - ' + end.format('HH:mm')
-        );
-      }
       return _react2.default.createElement(
         'span',
         null,
-        start.format('MMM.') + ' - ' + end.format('MMM.') + ', ' + start.format('HH:mm') + ' - ' + end.format('HH:mm')
+        start.format('HH:mm') + ' - ' + end.format('HH:mm')
       );
     }
   }, {
