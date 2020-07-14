@@ -38,6 +38,7 @@ var propTypes = {
   scaleUnit: _propTypes2.default.number.isRequired,
   scaleIntervals: _propTypes2.default.array.isRequired,
   cellHeight: _propTypes2.default.number.isRequired,
+  cellWidth: _propTypes2.default.number.isRequired,
   dayCellComponent: _propTypes2.default.func.isRequired,
   onSelectionStart: _propTypes2.default.func.isRequired,
   onCellMouseEnter: _propTypes2.default.func.isRequired
@@ -66,6 +67,7 @@ var CalendarBody = function (_React$Component) {
           scaleUnit = _props.scaleUnit,
           scaleIntervals = _props.scaleIntervals,
           cellHeight = _props.cellHeight,
+          cellWidth = _props.cellWidth,
           dayCellComponent = _props.dayCellComponent;
 
 
