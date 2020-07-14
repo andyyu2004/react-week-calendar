@@ -11,6 +11,7 @@ const propTypes = {
   scaleUnit: PropTypes.number.isRequired,
   scaleIntervals: PropTypes.array.isRequired,
   cellHeight: PropTypes.number.isRequired,
+  cellWidth: PropTypes.number.isRequired,
   dayCellComponent: PropTypes.func.isRequired,
   onSelectionStart: PropTypes.func.isRequired,
   onCellMouseEnter: PropTypes.func.isRequired,
@@ -31,6 +32,7 @@ class CalendarBody extends React.Component {
       scaleUnit,
       scaleIntervals,
       cellHeight,
+      cellWidth,
       dayCellComponent,
     } = this.props;
 
